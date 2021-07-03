@@ -1,0 +1,1 @@
+document.querySelector("#root").innerText = '插入文字1';
