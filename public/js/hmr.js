@@ -3,7 +3,7 @@ const scriptId = "hash";
 
 var socketClient = io(socketUrl);
 
-socketClient.on("receive_message", (e) => {
+socketClient.on("updateFile", (e) => {
   const hasScript = document.getElementById(`${scriptId}`);
   hasScript && hasScript.remove();
 
@@ -16,7 +16,7 @@ socketClient.on("receive_message", (e) => {
 
 window.onload = function () {
   setTimeout(() => {
-    socketClient.emit("clientInfo", {
+    socketClient.emit("clientEntry", {
       socketId: socketClient.id,
       clientId: "browser",
     });

@@ -2,7 +2,6 @@
   "name": "toy-hmr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "node ./index.js"
   },
@@ -12,6 +11,7 @@
   "dependencies": {
     "chokidar": "^3.5.2",
     "express": "^4.17.1",
+    "memory-fs": "^0.5.0",
     "socket.io": "^4.1.2"
   }
 }

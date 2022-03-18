@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./lib/socket.js" ></script>
-</head>
-<body>
+    <script src="./lib/socket.js"></script>
+  </head>
+  <body>
     <div id="root"></div>
+    <input id="test" />
+    <button id="add">add</button>
     <script src="./js/hmr.js"></script>
     <script src="./js/index.js"></script>
-</body>
+    <script>
+      document.getElementById("test").value = 0;
+
+      document.getElementById("add").addEventListener("click", () => {
+        document.getElementById("test").value =
+          parseInt(document.getElementById("test").value, 10) + 1;
+      });
+    </script>
+  </body>
 </html>
