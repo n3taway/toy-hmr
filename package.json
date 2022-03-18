@@ -1,0 +1,17 @@
+{
+  "name": "toy-hmr",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "n3taway",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "express": "^4.17.1",
+    "memory-fs": "^0.5.0",
+    "socket.io": "^4.1.2"
+  }
+}
